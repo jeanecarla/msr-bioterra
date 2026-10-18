@@ -1,1 +1,258 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f0e6">
+<title>MSR Bioterra | Catálogo</title>
+<style>
+:root {
+  --creme:#f5f0e6;
+  --verde:#58664b;
+  --terra:#76523d;
+  --texto:#39372f;
+  --branco:#fffdf8;
+  --dourado:#b08a50;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:75px}
+body{margin:0;background:var(--creme);color:var(--texto);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{background:var(--branco);padding:16px 18px;
+  text-align:center;border-bottom:1px solid #e5dccb}
+.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:4px;
+  color:var(--terra);margin:0}
+.sublogo{font-size:11px;letter-spacing:2px;color:var(--verde)}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px;
+  background:var(--branco);position:sticky;top:0;z-index:5}
+nav a{white-space:nowrap;text-decoration:none;color:var(--verde);
+  border:1px solid #d8d0bf;border-radius:22px;padding:8px 12px;font-size:13px}
+.hero{text-align:center;padding:42px 20px 35px;
+  background:linear-gradient(145deg,#e8dfcd,#f8f4ec)}
+.hero .eyebrow{color:var(--verde);font-size:12px;letter-spacing:2px}
+h1,h2,h3{font-family:Georgia,serif;font-weight:normal;line-height:1.25}
+h1{font-size:34px;color:var(--terra);margin:12px auto}
+.hero p{max-width:480px;margin:0 auto 20px}
+.button{display:inline-block;padding:11px 16px;border-radius:7px;
+  background:var(--verde);color:white;text-decoration:none;font-size:14px}
+section{padding:28px 16px;max-width:1050px;margin:auto}
+.section-intro{color:#716b60;font-size:14px}
+.line-section{margin-bottom:35px}
+.line-heading{border-bottom:1px solid #d9cfbd;padding-bottom:10px}
+.line-heading h2{color:var(--terra);margin-bottom:4px}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:var(--branco);border:1px solid #e7dfd1;
+  border-radius:10px;overflow:hidden;min-width:0}
+.photo{aspect-ratio:1/1;background:linear-gradient(145deg,#e9dfcd,#d9dfcf);
+  display:flex;align-items:center;justify-content:center;color:var(--verde);
+  font-family:Georgia,serif;font-size:19px;text-align:center;padding:12px}
+.card-content{padding:11px}
+.card h3{font-size:17px;margin:0 0 5px}
+.tag{font-size:11px;color:var(--verde)}
+.price{font-size:17px;font-weight:bold;margin:9px 0}
+.status{font-size:12px;color:#766c58;margin-bottom:10px}
+.card-actions{display:flex;flex-direction:column;gap:7px}
+.card-actions a,.card-actions button{display:block;width:100%;text-align:center;
+  padding:9px 5px;border-radius:6px;font-size:12px;text-decoration:none;
+  border:1px solid var(--verde);cursor:pointer}
+.details{background:transparent;color:var(--verde)}
+.whatsapp{background:var(--verde);color:white}
+.store{background:transparent;color:var(--verde)}
+.notice{background:#ebe4d6;padding:15px;border-radius:8px;font-size:13px}
+footer{background:#e8dfcf;padding:28px 18px;text-align:center;font-size:13px}
+footer a{color:var(--verde)}
+dialog{width:min(92%,560px);max-height:85vh;overflow:auto;border:0;
+  border-radius:12px;padding:22px;background:var(--branco);color:var(--texto)}
+dialog::backdrop{background:#29261f99}
+.dialog-close{float:right;background:var(--verde);color:white;border:0;
+  padding:8px 12px;border-radius:6px}
+.dialog-price{font-size:23px;color:var(--terra);font-weight:bold}
+@media(min-width:700px){
+  .hero{padding:65px 24px}
+  h1{font-size:43px}
+  section{padding:40px 24px}
+  .products{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .card-content{padding:15px}
+}
+@media(min-width:1000px){
+  .products{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="logo">MSR</p>
+  <div class="sublogo">BIOTERRA</div>
+  <div class="sublogo">ARTESANAL • SUSTENTÁVEL • NATURAL</div>
+</header>
+
+<nav aria-label="Navegação do catálogo">
+  <a href="#inicio">Início</a>
+  <a href="#essencial">Essencial</a>
+  <a href="#mel">Mel & Própolis</a>
+  <a href="#arroz">Arroz & Mel</a>
+  <a href="#reusa">Reusa</a>
+</nav>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="eyebrow">CUIDADO • NATUREZA • SUSTENTABILIDADE</div>
+  <h1>Cuidado natural, feito com propósito.</h1>
+  <p>Conheça a MSR Bioterra e suas linhas de produtos artesanais,
+  desenvolvidas com atenção aos ingredientes, ao cuidado e à sustentabilidade.</p>
+  <a class="button" href="#catalogo">Conheça nossos produtos</a>
+</section>
+
+<section id="catalogo">
+  <h2>Conheça nossas linhas</h2>
+  <p class="section-intro">Explore os produtos e conheça os detalhes de cada um.</p>
+  <div id="linhas"></div>
+  <div class="notice">
+    <strong>Produto temporariamente indisponível?</strong><br>
+    Entre em contato pelo WhatsApp para solicitar um aviso quando ele voltar.
+  </div>
+</section>
+</main>
+
+<dialog id="detalhes">
+  <button class="dialog-close" onclick="document.getElementById('detalhes').close()">Fechar ✕</button>
+  <div id="conteudo-detalhes"></div>
+</dialog>
+
+<footer>
+  <p><strong>MSR Bioterra</strong></p>
+  <p>Artesanal • Sustentável • Natural</p>
+  <p>Um catálogo para conhecer nossos produtos e suas características.</p>
+  <p>Contato: <a id="contato" href="#">WhatsApp MSR Bioterra</a></p>
+  <p>© <span id="ano"></span> MSR Bioterra</p>
+</footer>
+
+<script>
+// CONFIGURAÇÕES: atualize estes dados quando estiverem disponíveis.
+const WHATSAPP = "5531984144772";
+const LINK_LOJA = ""; // Cole aqui o endereço da loja virtual.
+
+const linhas = [
+  {
+    id:"essencial", nome:"Bioterra Essencial",
+    descricao:"Produtos artesanais para os cuidados pessoais.",
+    produtos:[
+      "Repelente","Bálsamo","Fluido para unhas","Escalda-pés",
+      "Vela de massagem"
+    ]
+  },
+  {
+    id:"mel", nome:"Bioterra Mel & Própolis",
+    descricao:"Cosméticos com foco em mel e própolis.",
+    produtos:[
+      "Sabonete líquido","Sabonete íntimo","Sabonete em barra",
+      "Condicionador sólido","Shampoo sólido de argila verde",
+      "Shampoo sólido de argila rosa","Manteiga corporal",
+      "Hidratante corporal","Banho de mel","Sérum",
+      "Hidratante facial","Lip Balm"
+    ]
+  },
+  {
+    id:"arroz", nome:"Bioterra Arroz & Mel",
+    descricao:"Uma linha cosmética inspirada no arroz e no mel.",
+    produtos:[
+      "Sabonete em barra","Sérum noturno","Sérum diurno",
+      "Gel de limpeza","Tônico","Hidratante corporal"
+    ]
+  },
+  {
+    id:"reusa", nome:"Bioterra Reusa",
+    descricao:"Embalagens reutilizáveis de tecido de algodão e cera de abelha.",
+    produtos:[
+      "Kit Reusa — 3 unidades de 30 × 30 cm",
+      "Kit Reusa — 20 × 20 cm, 30 × 30 cm e 40 × 40 cm"
+    ]
+  }
+];
+
+// Valores demonstrativos: substitua pelos preços reais antes de divulgar.
+const produtos = [];
+linhas.forEach(linha => {
+  linha.produtos.forEach(nome => {
+    produtos.push({
+      id: produtos.length,
+      linha: linha.nome,
+      nome,
+      preco: null,
+      disponibilidade: "Consultar disponibilidade",
+      descricao: "Descrição do produto a preencher.",
+      ingredientes: "Informações a confirmar.",
+      quantidade: "A informar",
+      uso: "Modo de uso a informar.",
+      cuidados: "Cuidados e advertências a confirmar."
+    });
+  });
+});
+
+function mensagemProduto(p) {
+  return `Olá! Tenho interesse no produto ${p.nome}, da linha ${p.linha}. Poderia me passar mais informações?`;
+}
+function linkWhatsApp(p) {
+  return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensagemProduto(p))}`;
+}
+function linkLoja(p) {
+  // Enquanto a loja não for informada, direciona para a página de contato.
+  return LINK_LOJA ? LINK_LOJA : linkWhatsApp(p);
+}
+function abrirDetalhes(id) {
+  const p = produtos[id];
+  document.getElementById("conteudo-detalhes").innerHTML = `
+    <p class="tag">${p.linha}</p>
+    <h2>${p.nome}</h2>
+    <p class="dialog-price">${p.preco === null ? "Preço a informar" : p.preco}</p>
+    <p><strong>Disponibilidade:</strong> ${p.disponibilidade}</p>
+    <p>${p.descricao}</p>
+    <p><strong>Ingredientes:</strong> ${p.ingredientes}</p>
+    <p><strong>Quantidade:</strong> ${p.quantidade}</p>
+    <p><strong>Modo de uso:</strong> ${p.uso}</p>
+    <p><strong>Cuidados:</strong> ${p.cuidados}</p>
+    <p><a class="button" href="${linkWhatsApp(p)}" target="_blank" rel="noopener">Consultar pelo WhatsApp</a></p>
+    <p><a href="${linkLoja(p)}" target="_blank" rel="noopener">Acessar loja virtual</a></p>
+  `;
+  document.getElementById("detalhes").showModal();
+}
+function renderizar() {
+  const container = document.getElementById("linhas");
+  container.innerHTML = linhas.map(linha => `
+    <div class="line-section" id="${linha.id}">
+      <div class="line-heading">
+        <h2>${linha.nome}</h2>
+        <p class="section-intro">${linha.descricao}</p>
+      </div>
+      <div class="products">
+        ${produtos.filter(p => p.linha === linha.nome).map(p => `
+          <article class="card">
+            <div class="photo" aria-label="Espaço reservado para fotografia">
+              Foto do produto
+            </div>
+            <div class="card-content">
+              <div class="tag">${p.linha}</div>
+              <h3>${p.nome}</h3>
+              <div class="price">${p.preco === null ? "Preço a informar" : p.preco}</div>
+              <div class="status">${p.disponibilidade}</div>
+              <div class="card-actions">
+                <button class="details" onclick="abrirDetalhes(${p.id})">Ver detalhes</button>
+                <a class="whatsapp" href="${linkWhatsApp(p)}" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="store" href="${linkLoja(p)}" target="_blank" rel="noopener">Loja virtual</a>
+              </div>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+    </div>
+  `).join("");
+}
+document.getElementById("contato").href =
+  `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá! Gostaria de conhecer a MSR Bioterra.")}`;
+document.getElementById("ano").textContent = new Date().getFullYear();
+renderizar();
+</script>
+</body>
+</html>
